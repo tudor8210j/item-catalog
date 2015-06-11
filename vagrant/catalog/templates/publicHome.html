@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<h1>Catalog Home</h1>
+
+<table>
+	<tr>
+		<td>
+			<h2>Categories</h2>
+			{% for c in category%}
+				<div>
+					<p>
+						<a href = "{{url_for('showCategory', category_id = c.id)}}">{{c.name}}</a>
+					</p>
+				</div>
+			{% endfor %}
+		<td valign="top">
+			<h2>Latest Items</h2>
+			{% for i in items %}
+			<div>
+				<p>
+					<a href = "{{url_for('showItemDetails', category_id=i.category_id, item_id=i.id)}}">{{i.name}}<a/> ({{i.category.name}})
+				</p>
+			</div>
+			{% endfor %}
+	</tr>
+</table>
+{% endblock %}

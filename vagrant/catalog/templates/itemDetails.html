@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<h1>Item Details</h1>
+
+<table>
+	<tr>
+		<td>
+      <h2>{{item.name}}</h2>
+      <div>
+        <p>Description: {{item.description}}</p>
+      </div>
+  </tr>
+</td>
+
+{% endblock %}

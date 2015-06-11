@@ -1,0 +1,22 @@
+<div>
+	<a class=title href="{{url_for('showCategories')}}">Video Games for Life!</a>
+  </br>
+  </br>
+	{% if 'username' in session %}
+		<a href = "{{url_for('gdisconnect')}}">Logout</a>
+	{% else: %}
+		<a href = "{{url_for('showLogin')}}">Login</a>
+	{% endif %}
+</div>
+
+<!--Collect and display flash messages-->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+<ul>
+{% for message in messages %}
+  <li><strong>{{message}}</strong></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}

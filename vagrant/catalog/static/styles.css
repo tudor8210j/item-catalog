@@ -1,0 +1,56 @@
+h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	color: #CC0033;
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #FF9933;
+	line-height: 23px;
+}
+ p {
+ 	font-family: "Lucida Console", Monaco, monospace;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+ strong {
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ }
+
+a.title {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 50px;
+	color: #3399FF;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	width: 100%
+}
+
+th, td {
+	padding: 15px;
+}
+
+td {
+	vertical-align: top;
+}
